@@ -1,0 +1,132 @@
+[2024-05-13T07:17:13.617201+00:00] main.CRITICAL: Magento\Framework\Exception\LocalizedException: The "requirejs-config" block threw an exception, and it can't be rendered. in /var/www/html/magentoUserStory/vendor/magento/framework/View/Element/ExceptionHandlerBlock.php:59
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\ExceptionHandlerBlock->toHtml()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#2 /var/www/html/magentoUserStory/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#4 /var/www/html/magentoUserStory/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#5 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#6 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#7 /var/www/html/magentoUserStory/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#8 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#9 /var/www/html/magentoUserStory/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#10 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#11 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#12 /var/www/html/magentoUserStory/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#13 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#14 /var/www/html/magentoUserStory/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#15 /var/www/html/magentoUserStory/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#16 /var/www/html/magentoUserStory/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#17 /var/www/html/magentoUserStory/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#18 /var/www/html/magentoUserStory/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#19 /var/www/html/magentoUserStory/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#20 /var/www/html/magentoUserStory/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#21 /var/www/html/magentoUserStory/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#22 /var/www/html/magentoUserStory/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#23 /var/www/html/magentoUserStory/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#24 /var/www/html/magentoUserStory/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#25 /var/www/html/magentoUserStory/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#26 /var/www/html/magentoUserStory/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#27 /var/www/html/magentoUserStory/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#28 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#29 /var/www/html/magentoUserStory/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#30 {main} {"exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The \"requirejs-config\" block threw an exception, and it can't be rendered. at /var/www/html/magentoUserStory/vendor/magento/framework/View/Element/ExceptionHandlerBlock.php:59)"} []
+[2024-05-13T07:35:34.055286+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T07:35:34.131911+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T07:35:44.452741+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T07:35:45.045890+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T07:35:45.094429+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T08:27:39.805936+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T08:27:39.876476+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T08:28:19.590687+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T08:28:19.644852+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T09:32:55.417036+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
+[2024-05-13T09:32:55.464869+00:00] main.CRITICAL: ReflectionException: Class "Magento\Framework\App\Http\Interceptor" does not exist in /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34
+Stack trace:
+#0 /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php(34): ReflectionClass->__construct()
+#1 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Definition/Runtime.php(54): Magento\Framework\Code\Reader\ClassReader->getConstructor()
+#2 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Framework\ObjectManager\Definition\Runtime->getParameters()
+#3 /var/www/html/magentoUserStory/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#4 /var/www/html/magentoUserStory/vendor/magento/framework/App/Bootstrap.php(238): Magento\Framework\ObjectManager\ObjectManager->create()
+#5 /var/www/html/magentoUserStory/pub/index.php(29): Magento\Framework\App\Bootstrap->createApplication()
+#6 {main} {"exception":"[object] (ReflectionException(code: -1): Class \"Magento\\Framework\\App\\Http\\Interceptor\" does not exist at /var/www/html/magentoUserStory/vendor/magento/framework/Code/Reader/ClassReader.php:34)"} []
