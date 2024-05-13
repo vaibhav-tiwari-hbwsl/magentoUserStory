@@ -48,7 +48,7 @@ class Test implements CategoryInterface
      */
     public function displayParams()
     {
-        print_r("Array: " . print_r($this->array, true) . "<br>");
+        echo("Array: " . print_r($this->array, true) . "<br>");
         print_r("String: " . $this->string);
     }
 }
